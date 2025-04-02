@@ -22,7 +22,8 @@ from diagrams.azure.security import KeyVaults, SecurityCenter, Sentinel
 from diagrams.azure.storage import StorageAccounts, DataLakeStorage, QueuesStorage, TableStorage
 from diagrams.azure.web import AppServicePlans, Signalr
 
-with Diagram("Complex Azure Architecture", outformat=["jpg", "png", "dot"], show=False):
+with Diagram("Complex Azure Architecture", show=False, outformat=["jpg", "png", "dot","pdf","svg"]):
+    user = Usericon("User")
     
 
     with Cluster("Azure Subscription (1)"):
